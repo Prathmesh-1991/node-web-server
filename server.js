@@ -57,10 +57,21 @@ res.render('home.hbs',{
   });
 });
 
+
+
 app.get('/about',(req,res) => {
 //res.send('This page give details about page');
 res.render('about.hbs',{
     titlePage: 'About'
+    //currentYear: new Date().getFullYear()
+  });
+});
+
+app.get('/projects',(req,res) => {
+//res.send('This page give details about page');
+res.render('projects.hbs',{
+    titlePage: 'About Project',
+    message: 'Welcome to world of new projects'
     //currentYear: new Date().getFullYear()
   });
 });
