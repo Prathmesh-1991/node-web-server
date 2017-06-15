@@ -21,13 +21,13 @@ fs.appendFile('server.log',log + '\n', (err) =>{
 next();
 });
 
-app.use((req,res,next) =>
+/*app.use((req,res,next) =>
 {
   res.render('maintenance.hbs',{
     titlePage: 'Maintenance Page',
     message: 'Sorry for inconvenience.Site is under construction'
 });
-});
+});*/
 
 app.use(express.static(__dirname+'/public'));
 
